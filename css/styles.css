@@ -1,0 +1,20 @@
+.grid-layout {
+    display: grid;
+    grid-template-areas: 'sidebar header' 'sidebar main';
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 80px 1fr;
+}
+
+.main {
+    grid-area: main;
+    max-height: calc(100vh - 80px);
+    overflow-y: scroll;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.header {
+    grid-area: header;
+}
